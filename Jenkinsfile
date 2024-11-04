@@ -28,7 +28,7 @@ pipeline {
                     sh 'docker rm my-html-app || true'
 
                     // Run a new container from the image
-                    sh 'docker run -d --name my-html-app -p 8088:80 marzouguiAhmed9/my-html-app:latest'
+                    sh 'docker run -d --name my-html-app -p 8089:80 marzouguiAhmed9/my-html-app:latest'
                 }
             }
         }
