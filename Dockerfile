@@ -1,8 +1,4 @@
-# Use a lightweight web server
+# Dockerfile
 FROM nginx:alpine
-
-# Copy the HTML file into the container
-COPY index.html /usr/share/nginx/html/
-
-# Expose the port the app runs on
+COPY code.html /usr/share/nginx/html/index.html
 EXPOSE 80
