@@ -34,10 +34,5 @@ pipeline {
         }
     }
 
-    post {
-        always {
-            // Clean up Docker images if needed
-            sh 'docker rmi marzouguiAhmed9/my-html-app:latest || true'
-        }
-    }
+
 }
